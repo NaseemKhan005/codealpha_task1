@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<!-- ------ header start ------- -->
-		<section class="relative bg-[#F8F4F0] min-h-screen w-full">
+		<section id="home" class="relative bg-[#F8F4F0] min-h-screen w-full">
 			<!-- ------ Navbar Start ------- -->
 			<div class="">
 				<div
@@ -29,25 +29,53 @@
 						class="flex py-28 px-10 md:p-0 md:items-center gap-8 text-sm md:mt-1 fixed md:relative w-full sm:w-80 md:w-auto h-screen md:h-auto flex-col md:flex-row top-0 -right-full bg-white md:bg-[#F8F4F0] md:right-0 z-[80] transition-all sm:shadow-md md:shadow-none"
 					>
 						<li>
-							<a href="#">Home</a>
+							<a
+								href="#home"
+								class="lg:w-fit w-full block lg:inline-block border-b lg:border-b-0 pb-1 lg:pb-0 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] hover:text-orange-500 before:left-1/2 before:bottom-0 before:-translate-x-1/2 before:bg-orange-500 before:rounded-full before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+								>Home</a
+							>
 						</li>
 						<li>
-							<a href="#">About</a>
+							<a
+								href="#about"
+								class="lg:w-fit w-full block lg:inline-block border-b lg:border-b-0 pb-1 lg:pb-0 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] hover:text-orange-500 before:left-1/2 before:bottom-0 before:-translate-x-1/2 before:bg-orange-500 before:rounded-full before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+								>About</a
+							>
 						</li>
 						<li>
-							<a href="#">Services</a>
+							<a
+								href="#services"
+								class="lg:w-fit w-full block lg:inline-block border-b lg:border-b-0 pb-1 lg:pb-0 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] hover:text-orange-500 before:left-1/2 before:bottom-0 before:-translate-x-1/2 before:bg-orange-500 before:rounded-full before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+								>Services</a
+							>
 						</li>
 						<li>
-							<a href="#">Gallery</a>
+							<a
+								href="#gallery"
+								class="lg:w-fit w-full block lg:inline-block border-b lg:border-b-0 pb-1 lg:pb-0 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] hover:text-orange-500 before:left-1/2 before:bottom-0 before:-translate-x-1/2 before:bg-orange-500 before:rounded-full before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+								>Gallery</a
+							>
 						</li>
 						<li>
-							<a href="#">Recipe</a>
+							<a
+								href="#recipe"
+								class="lg:w-fit w-full block lg:inline-block border-b lg:border-b-0 pb-1 lg:pb-0 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] hover:text-orange-500 before:left-1/2 before:bottom-0 before:-translate-x-1/2 before:bg-orange-500 before:rounded-full before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+								>Recipe</a
+							>
 						</li>
 						<li>
-							<a href="#">App</a>
+							<a
+								href="#app"
+								class="lg:w-fit w-full block lg:inline-block border-b lg:border-b-0 pb-1 lg:pb-0 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] hover:text-orange-500 before:left-1/2 before:bottom-0 before:-translate-x-1/2 before:bg-orange-500 before:rounded-full before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+								>App</a
+							>
 						</li>
 						<li>
-							<a href="#">Contact</a>
+							<a
+								href="#contact"
+								class="lg:w-fit w-full block lg:inline-block border-b lg:border-b-0 pb-1 lg:pb-0 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] hover:text-orange-500 before:left-1/2 before:bottom-0 before:-translate-x-1/2 before:bg-orange-500 before:rounded-full before:transition-all before:duration-500 before:scale-0 hover:before:scale-100"
+								>Contact</a
+							>
 						</li>
 						<button
 							onclick="closeMenu()"
@@ -126,6 +154,7 @@
 
 		<!-- ------ Services start ------- -->
 		<section
+			id="services"
 			class="flex items-center flex-wrap gap-5 container px-5 md:px-10 mx-auto my-20"
 		>
 			<div
@@ -189,7 +218,7 @@
 		<!-- ------ Services end ------- -->
 
 		<!-- ------ About start ------- -->
-		<section class="relative">
+		<section id="about" class="relative">
 			<img
 				src="/assets/images/about2.png"
 				alt="vegetables"
@@ -223,6 +252,7 @@
 
 		<!-- ------ recipe start ------- -->
 		<section
+			id="recipe"
 			class="flex items-center flex-col gap-5 container px-5 md:px-10 mx-auto my-20"
 		>
 			<h2
@@ -282,6 +312,88 @@
 			</div>
 		</section>
 		<!-- ------ recipe end ------- -->
+
+		<!-- ------ gallery start ------- -->
+		<section
+			id="gallery"
+			class="bg-[#F8F4F0] py-20 my-20 relative overflow-hidden"
+		>
+			<img
+				src="/assets/images/bg-1.svg"
+				alt="gallery"
+				class="w-52 opacity-30 -rotate-45 absolute top-10"
+			/>
+			<img
+				src="/assets/images/bg-2.svg"
+				alt="gallery"
+				class="w-52 opacity-30 -rotate-45 absolute -right-16 md:right-0 md:top-0 top-1/2 -translate-y-1/2 md:translate-y-0"
+			/>
+			<img
+				src="/assets/images/bg-3.svg"
+				alt="gallery"
+				class="w-52 opacity-5 -rotate-45 absolute bottom-10"
+			/>
+			<div
+				class="container px-5 md:px-10 mx-auto flex items-center flex-col gap-5"
+			>
+				<h2
+					class="text-orange-500 bg-white rounded-full text-sm font-semibold py-4 px-10 tracking-widest z-[2]"
+				>
+					OUR GALLERY
+				</h2>
+				<h1 class="text-3xl sm:text-4xl font-semibold text-[#213344]">
+					Restaurant Gallery
+				</h1>
+
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-3 items-center gap-5 lg:gap-x-16 mt-16"
+				>
+					<div class="overflow-hidden rounded-lg">
+						<img
+							src="/assets/images/gallery1.jpg"
+							alt="gallery"
+							class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+						/>
+					</div>
+					<div class="h-full md:h-auto overflow-hidden rounded-lg">
+						<img
+							src="/assets/images/gallery2.jpg"
+							alt="gallery"
+							class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500 h-full object-cover md:object-contain"
+						/>
+					</div>
+					<div class="overflow-hidden rounded-lg">
+						<img
+							src="/assets/images/gallery3.jpg"
+							alt="gallery"
+							class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+						/>
+					</div>
+					<div class="h-full md:h-auto overflow-hidden rounded-lg">
+						<img
+							src="/assets/images/gallery4.jpg"
+							alt="gallery"
+							class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500 h-full object-cover md:object-contain"
+						/>
+					</div>
+					<div class="overflow-hidden rounded-lg">
+						<img
+							src="/assets/images/gallery5.jpg"
+							alt="gallery"
+							class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+						/>
+					</div>
+					<div class="h-full md:h-auto overflow-hidden rounded-lg">
+						<img
+							src="/assets/images/gallery6.jpg"
+							alt="gallery"
+							class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500 h-full object-cover md:object-contain"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ------ gallery end ------- -->
 
 		<!-- ------ Javascript File Link ------- -->
 		<script src="js/script.js"></script>
