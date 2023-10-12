@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+
+		<!-- fontawesome cdn link -->
+		<script
+			src="https://kit.fontawesome.com/c18b08c464.js"
+			crossorigin="anonymous"
+		></script>
+
+		<title>Restro | Naseem Khan</title>
+	</head>
+	<body>
+		<!-- ------ header start ------- -->
+		<section class="relative bg-[#F8F4F0] min-h-screen w-full">
+			<!-- ------ Navbar Start ------- -->
+			<div class="">
+				<div
+					class="flex items-center justify-between py-5 container px-5 md:px-10 mx-auto transition-all duration-500"
+				>
+					<div>
+						<h1 class="text-xl first-letter:text-3xl">Burger</h1>
+					</div>
+					<ul
+						id="menu"
+						class="flex py-28 px-10 md:p-0 md:items-center gap-8 text-sm md:mt-1 fixed md:relative w-full sm:w-80 md:w-auto h-screen md:h-auto flex-col md:flex-row top-0 -right-full bg-white md:bg-[#F8F4F0] md:right-0 z-[80] transition-all sm:shadow-md md:shadow-none"
+					>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Gallery</a>
+						</li>
+						<li>
+							<a href="#">Recipe</a>
+						</li>
+						<li>
+							<a href="#">App</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+						<button
+							onclick="closeMenu()"
+							class="md:hidden cursor-pointer text-lg absolute top-10 left-8 border border-transparent hover:border-zinc-100 rounded-full pb-1 pt-[.35rem] px-[.7rem] hover:bg-zinc-100"
+						>
+							<i class="fa-solid fa-xmark"></i>
+						</button>
+					</ul>
+					<button
+						onclick="openMenu()"
+						class="md:hidden cursor-pointer text-xl border border-transparent hover:border-zinc-100 rounded-full pb-1 pt-[.35rem] px-[.7rem] hover:bg-zinc-100"
+					>
+						<i class="fa-solid fa-bars"></i>
+					</button>
+				</div>
+			</div>
+			<!-- ------ Navbar End ------- -->
+
+			<div
+				class="flex items-center justify-center w-full min-h-[90vh] py-8 lg:py-0"
+			>
+				<div
+					class="flex items-start justify-between flex-col lg:flex-row gap-10 container px-5 md:px-10 mx-auto pt-5"
+				>
+					<div class="w-full flex flex-col gap-6">
+						<div class="text-orange-500">
+							<i class="fa-solid fa-truck-fast"></i>
+							<span class="text-xs tracking-widest ml-2"
+								>EASY WAY TO ORDER YOUR FOOD</span
+							>
+						</div>
+
+						<h1
+							class="text-4xl sm:text-5xl xl:text-[3.5rem] font-bold leading-normal text-[#213344]"
+						>
+							Healthy & fresh <br class="lg:block hidden" />
+							food in one place
+						</h1>
+						<p class="text-lg text-[#616A73] font-light">
+							come and see the best burguers in town bring
+							<br class="lg:block hidden" />
+
+							your friends and family.
+						</p>
+						<div class="flex gap-5 mt-4 md:mt-6 lg:mt-10">
+							<button
+								class="btn text-sm md:text-base relative text-white bg-[#213344] transition-all duration-500 hover:bg-orange-500 rounded-full py-3 px-[.35rem]"
+							>
+								<span class="ml-3">Order now</span>
+								<span
+									class="bg-orange-500 py-2 px-3 ml-2 md:ml-4 rounded-full btn-icon"
+								>
+									<i class="fa-solid fa-arrow-right"></i>
+								</span>
+							</button>
+							<button
+								class="text-sm rounded-full border border-black px-5 md:px-7 hover:bg-orange-500 hover:border-orange-500 hover:text-white"
+							>
+								See our menu
+							</button>
+						</div>
+					</div>
+
+					<div class="w-full relative">
+						<img src="assets/images/burger1.png" alt="burger" class="w-[95%]" />
+						<img
+							src="assets/images/burger2.png"
+							alt="burger"
+							class="absolute top-0 right-10"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ------ header end ------- -->
+
+		<!-- ------ Services start ------- -->
+		<section
+			class="flex items-center flex-wrap gap-5 container px-5 md:px-10 mx-auto my-20"
+		>
+			<div
+				class="flex items-center gap-5 border rounded-full p-5 w-full lg:w-fit"
+			>
+				<div class="border rounded-full p-1">
+					<div class="bg-[#F7F7F7] py-[.6rem] px-[.65rem] rounded-full">
+						<img
+							src="assets/images/easy-use.png"
+							alt="easy to use"
+							class="w-10 h-10 object-contain object-center rounded-full"
+						/>
+					</div>
+				</div>
+				<div>
+					<h2 class="font-semibold text-lg text-[#213344]">Easy to order</h2>
+					<p class="font-light text-sm mt-1 text-[#616A73]">
+						Our clients choose our products.
+					</p>
+				</div>
+			</div>
+			<div
+				class="flex items-center gap-5 border rounded-full p-5 w-full lg:w-fit"
+			>
+				<div class="border rounded-full p-1">
+					<div class="bg-[#F7F7F7] py-[.6rem] px-[.65rem] rounded-full">
+						<img
+							src="assets/images/fast-delivery.png"
+							alt="easy to use"
+							class="w-10 h-10 object-contain object-center rounded-full"
+						/>
+					</div>
+				</div>
+				<div>
+					<h2 class="font-semibold text-lg text-[#213344]">Fastest delivery</h2>
+					<p class="font-light text-sm mt-1 text-[#616A73]">
+						Our clients choose our products.
+					</p>
+				</div>
+			</div>
+			<div
+				class="flex items-center gap-5 border rounded-full p-5 w-full lg:w-fit"
+			>
+				<div class="border rounded-full p-1">
+					<div class="bg-[#F7F7F7] py-[.6rem] px-[.65rem] rounded-full">
+						<img
+							src="assets/images/like.png"
+							alt="easy to use"
+							class="w-10 h-10 object-contain object-center rounded-full"
+						/>
+					</div>
+				</div>
+				<div>
+					<h2 class="font-semibold text-lg text-[#213344]">Best quality</h2>
+					<p class="font-light text-sm mt-1 text-[#616A73]">
+						Our clients choose our products.
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- ------ Services end ------- -->
+
+		<!-- ------ About start ------- -->
+		<section class="relative">
+			<img
+				src="/assets/images/about2.png"
+				alt="vegetables"
+				class="absolute top-[60%] md:top-1/2 -translate-y-1/2 right-0 w-28 lg:w-40 -z-10"
+			/>
+			<div
+				class="flex items-center flex-col lg:flex-row gap-10 container px-5 md:px-10 mx-auto my-20 relative"
+			>
+				<div class="w-full">
+					<img src="/assets/images/about.png" alt="shef" class="lg:w-[90%]" />
+				</div>
+				<div class="w-full flex items-start flex-col gap-5 lg:gap-7">
+					<h1 class="text-4xl lg:text-5xl text-[#213344]">
+						<span class="font-extralight">Masterchef</span> <br />
+						<span class="font-bold"> Message </span>
+					</h1>
+					<h2 class="text-xl text-[#213344]">
+						First we eat, then we do <br class="hidden lg:block" />
+						everything else.
+					</h2>
+					<p class="lg:text-lg font-extralight text-[#213344]/70 leading-loose">
+						And for me that moment of discovery is just so thrilling, on any
+						level, that I think anybody that&apos;s experienced it is pretty
+						quickly addicted to it.
+					</p>
+					<img src="/assets/images/sign.png" alt="signature" class="w-fit" />
+				</div>
+			</div>
+		</section>
+		<!-- ------ About end ------- -->
+
+		<!-- ------ recipe start ------- -->
+		<section
+			class="flex items-center flex-col gap-5 container px-5 md:px-10 mx-auto my-20"
+		>
+			<h2
+				class="text-orange-500 bg-neutral-100 rounded-full text-sm font-semibold py-4 px-10 tracking-widest"
+			>
+				SPECIAL RECIPES
+			</h2>
+			<h1 class="text-4xl font-semibold text-[#213344]">Our Specials</h1>
+			<div
+				class="flex items-center flex-col md:flex-row gap-10 md:gap-16 lg:gap-20 xl:gap-32"
+			>
+				<div class="flex flex-col gap-5 items-center text-center">
+					<div>
+						<img
+							src="/assets/images/recipe1.jpg"
+							alt="recipe"
+							class="rounded-full hover:rotate-180 transition-all duration-500 cursor-pointer"
+						/>
+					</div>
+					<div>
+						<h3 class="text-xl font-semibold text-[#213344]">Italian Deli</h3>
+						<span class="text-[#213344]/70 font-extralight"
+							>Salmon, spices, cream sauce.</span
+						>
+					</div>
+				</div>
+				<div class="flex flex-col gap-5 items-center text-center">
+					<div>
+						<img
+							src="/assets/images/recipe2.jpg"
+							alt="recipe"
+							class="rounded-full hover:rotate-180 transition-all duration-500 cursor-pointer"
+						/>
+					</div>
+					<div>
+						<h3 class="text-xl font-semibold text-[#213344]">Italian Deli</h3>
+						<span class="text-[#213344]/70 font-extralight"
+							>Salmon, spices, cream sauce.</span
+						>
+					</div>
+				</div>
+				<div class="flex flex-col gap-5 items-center text-center">
+					<div>
+						<img
+							src="/assets/images/recipe3.jpg"
+							alt="recipe"
+							class="rounded-full hover:rotate-180 transition-all duration-500 cursor-pointer"
+						/>
+					</div>
+					<div>
+						<h3 class="text-xl font-semibold text-[#213344]">Italian Deli</h3>
+						<span class="text-[#213344]/70 font-extralight"
+							>Salmon, spices, cream sauce.</span
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ------ recipe end ------- -->
+
+		<!-- ------ Javascript File Link ------- -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
