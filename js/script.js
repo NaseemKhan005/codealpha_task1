@@ -12,6 +12,7 @@ function closeMenu() {
 	menu.classList.remove("right-0");
 }
 
+// current date
 let date = document.getElementById("date");
 
 const currentDate = new Date().getFullYear();
