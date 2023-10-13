@@ -11,3 +11,9 @@ function closeMenu() {
 	menu.classList.add("-right-full");
 	menu.classList.remove("right-0");
 }
+
+let date = document.getElementById("date");
+
+const currentDate = new Date().getFullYear();
+
+date.innerHTML = currentDate;
